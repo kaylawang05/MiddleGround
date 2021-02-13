@@ -6,7 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 class Appearance {
-    static let textColor = UIColor(hex: "#707070")
+    
+    enum Colors {
+        static let textColor = UIColor(hex: "#707070")
+    }
+    
+    
 }
