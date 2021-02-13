@@ -14,6 +14,7 @@
 		AD45B0CC25D8718A00D83645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD45B0CA25D8718A00D83645 /* LaunchScreen.storyboard */; };
 		AD45B0D725D8718A00D83645 /* Middle_GroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0D625D8718A00D83645 /* Middle_GroundTests.swift */; };
 		AD45B0E225D8718B00D83645 /* Middle_GroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0E125D8718B00D83645 /* Middle_GroundUITests.swift */; };
+		AD45B10725D899EF00D83645 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B10625D899EF00D83645 /* Appearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AD45B0DD25D8718B00D83645 /* Middle GroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Middle GroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD45B0E125D8718B00D83645 /* Middle_GroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middle_GroundUITests.swift; sourceTree = "<group>"; };
 		AD45B0E325D8718B00D83645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD45B10625D899EF00D83645 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				AD45B0BF25D8718300D83645 /* AppDelegate.swift */,
 				AD45B0C125D8718300D83645 /* SceneDelegate.swift */,
+				AD45B10625D899EF00D83645 /* Appearance.swift */,
 				AD45B0C325D8718300D83645 /* ViewController.swift */,
 				AD45B0C825D8718A00D83645 /* Assets.xcassets */,
 				AD45B0CA25D8718A00D83645 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 				AD45B0C425D8718300D83645 /* ViewController.swift in Sources */,
 				AD45B0C025D8718300D83645 /* AppDelegate.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,
+				AD45B10725D899EF00D83645 /* Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kwang.Middle-GroundUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Middle Ground";
@@ -535,6 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kwang.Middle-GroundUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Middle Ground";

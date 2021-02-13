@@ -10,8 +10,9 @@ import AVFoundation
 import AVKit
 
 class ViewController: UIViewController {
+    private let playButton = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 200));
 
-    let playButton = UIButton()
+    
     @objc func playVideo(_ sender: UIButton) {
         guard let url = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8") else {
             return
@@ -31,8 +32,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        
+        playButton.setTitle("play", for: .normal)
+        playButton.setTitleColor(.black, for: .normal)
         self.view.addSubview(playButton)
         playButton.addTarget(self, action: #selector(playVideo(_:)), for: .touchUpInside)
+        
+        
         // Do any additional setup after loading the view.
     }
 
