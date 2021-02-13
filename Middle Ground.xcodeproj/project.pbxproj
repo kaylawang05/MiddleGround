@@ -15,6 +15,7 @@
 		AD45B0D725D8718A00D83645 /* Middle_GroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0D625D8718A00D83645 /* Middle_GroundTests.swift */; };
 		AD45B0E225D8718B00D83645 /* Middle_GroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0E125D8718B00D83645 /* Middle_GroundUITests.swift */; };
 		AD45B10725D899EF00D83645 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B10625D899EF00D83645 /* Appearance.swift */; };
+		BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AD45B0E125D8718B00D83645 /* Middle_GroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middle_GroundUITests.swift; sourceTree = "<group>"; };
 		AD45B0E325D8718B00D83645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD45B10625D899EF00D83645 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		AD45B0BE25D8718300D83645 /* Middle Ground */ = {
 			isa = PBXGroup;
 			children = (
-				AD45B0BF25D8718300D83645 /* AppDelegate.swift */,
-				AD45B0C125D8718300D83645 /* SceneDelegate.swift */,
-				AD45B10625D899EF00D83645 /* Appearance.swift */,
-				AD45B0C325D8718300D83645 /* ViewController.swift */,
+				BF947ADF25D89BBE0077BEDF /* ViewControllers */,
+				BF947AE625D89BD20077BEDF /* UI */,
+				BF947AD525D89B6F0077BEDF /* Extensions */,
+				BF947ADE25D89BA40077BEDF /* Other */,
 				AD45B0C825D8718A00D83645 /* Assets.xcassets */,
-				AD45B0CA25D8718A00D83645 /* LaunchScreen.storyboard */,
-				AD45B0CD25D8718A00D83645 /* Info.plist */,
 			);
 			path = "Middle Ground";
 			sourceTree = "<group>";
@@ -126,6 +126,41 @@
 				AD45B0E325D8718B00D83645 /* Info.plist */,
 			);
 			path = "Middle GroundUITests";
+			sourceTree = "<group>";
+		};
+		BF947AD525D89B6F0077BEDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF947ADE25D89BA40077BEDF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AD45B0BF25D8718300D83645 /* AppDelegate.swift */,
+				AD45B0CD25D8718A00D83645 /* Info.plist */,
+				AD45B0C125D8718300D83645 /* SceneDelegate.swift */,
+				AD45B0CA25D8718A00D83645 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BF947ADF25D89BBE0077BEDF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD45B0C325D8718300D83645 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF947AE625D89BD20077BEDF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AD45B10625D899EF00D83645 /* Appearance.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */,
 				AD45B0C425D8718300D83645 /* ViewController.swift in Sources */,
 				AD45B0C025D8718300D83645 /* AppDelegate.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,
