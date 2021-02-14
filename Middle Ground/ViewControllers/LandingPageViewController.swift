@@ -30,6 +30,17 @@ class LandingPageViewController: UIViewController {
         s.textAlignment = .center
         return s
     }()
+    private let signupButton: UIButton = {
+        let sb = UIButton()
+        sb.setTitle("Sign Up", for: .normal)
+        sb.setTitleColor(MGAppearance.Colors.color, for: .normal)
+        sb.addTarget(self, action: #selector(clickSignUp), for: .touchUpInside)
+        sb.layer.cornerRadius = 25
+        sb.layer.borderWidth = 1
+        sb.layer.borderColor = MGAppearance.Colors.color.cgColor
+        return sb
+    }()
+    private let nextVC = CreateProfileViewController()
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +60,16 @@ class LandingPageViewController: UIViewController {
         logoImageView.addSubview(slogan)
         slogan.constrain(width: 376, height: 30)
         slogan.constrain(to: logoImageView, bottomInset: 0)
+        
+        self.view.addSubview(signupButton)
+        signupButton.constrain(width: 262, height: 50)
+        signupButton.constrain(to: self.view, centerXInset: 0)
+        signupButton.constrain(against: logoImageView, topInset: 30)
     }
 
-    
+    @objc func clickSignUp() {
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
     
 }
 
