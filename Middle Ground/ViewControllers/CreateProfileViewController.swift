@@ -25,6 +25,8 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     private let socialView = UIView()
 //    private let linkView = UIView()
     
+    public let videoPage = BeforeVideoViewController()
+    
     private let titleLabel: UILabel = {
         let tl = UILabel()
         tl.text = "Create Profile"
@@ -274,6 +276,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         print(selectedRegion)
         print(economicSlider.value)
         print(socialSlider.value)
+        self.navigationController?.pushViewController(videoPage, animated: false)
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
