@@ -89,7 +89,7 @@ class RateViewController: UIViewController {
         rateExplain.constrain(to: self.view, topInset: 300, centerXInset: 0)
         
         self.view.addSubview(rateSlider)
-        rateSlider.constrain(width: 300, height: 5)
+        rateSlider.constrain(width: 300, height: 15)
         rateSlider.constrain(against: rateExplain, topInset: 20)
         rateSlider.constrain(to: self.view, centerXInset: 0)
         
