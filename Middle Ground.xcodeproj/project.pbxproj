@@ -306,12 +306,9 @@
 			files = (
 				BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */,
 				BF41D1E825D8A4E90036B301 /* MGTextField.swift in Sources */,
-<<<<<<< HEAD
 				AD45B0C425D8718300D83645 /* ViewController.swift in Sources */,
 				AD45B11525D8D62100D83645 /* RegionPickerViewController.swift in Sources */,
-=======
 				AD45B0C425D8718300D83645 /* LandingPageViewController.swift in Sources */,
->>>>>>> 0e4f586b54f5ce82bbd87d15bef8ae99b870708b
 				AD45B0C025D8718300D83645 /* AppDelegate.swift in Sources */,
 				BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,
