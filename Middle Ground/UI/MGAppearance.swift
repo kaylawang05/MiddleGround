@@ -11,7 +11,7 @@ import UIKit
 class MGAppearance {
     
     enum Colors {
-        static let textColor = UIColor(hex: "#707070")
+        static let color = UIColor(hex: "#707070")
     }
     
     enum Fonts {
@@ -19,7 +19,11 @@ class MGAppearance {
         static let testFont1 = UIFont(name: "Rockwell Bold", size: 1)
         static let testFont2 = UIFont(name: "Rockwell Bold Italic", size: 1)
         static let testFont3 = UIFont(name: "Rockwell Italic", size: 1)
+        static let textField = UIFont(name: "Rockwell", size: 15)
     }
     
+    static let textFieldHeight = 36
+    static let textFieldLength = 300
+    static let distanceBetweenTextField = 25
     
 }

@@ -11,7 +11,7 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    private let title = UILabel()
+//    private let title = UILabel()
 //    private let 
     
 //    @objc func playVideo(_ sender: UIButton) {
