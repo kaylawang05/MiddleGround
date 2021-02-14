@@ -39,6 +39,9 @@ class ViewController: UIViewController {
         self.view.addSubview(playButton)
         playButton.addTarget(self, action: #selector(playVideo(_:)), for: .touchUpInside)
         
+        self.navigationController!.pushViewController(CreateProfileViewController(), animated: true)
+        
+//        self.present(CreateProfileViewController(), animated: true, completion: nil)
         
         // Do any additional setup after loading the view.
     }
