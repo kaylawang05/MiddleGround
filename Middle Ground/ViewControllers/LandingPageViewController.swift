@@ -9,7 +9,8 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class ViewController: UIViewController {
+class LandingPageViewController: UIViewController {
+    private let playButton = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 200));
     
 //    private let title = UILabel()
 //    private let 
