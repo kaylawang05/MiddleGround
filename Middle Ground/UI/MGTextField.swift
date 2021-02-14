@@ -27,7 +27,7 @@ class MGTextField: UITextField {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setPlaceHolder(with text: String = "Location?", andFont font: UIFont = Appearance.Font.contentTitle, andColor color: UIColor = Appearance.Color.darkGrey) {
+    func setPlaceHolder(with text: String = "Location?", andFont font: UIFont = MGAppearance.Font.contentTitle, andColor color: UIColor = Appearance.Color.darkGrey) {
         
         let attributes = [NSAttributedString.Key.foregroundColor: color,
                           NSAttributedString.Key.font: font]
