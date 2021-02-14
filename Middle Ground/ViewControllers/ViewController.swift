@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
+        self.navigationController!.pushViewController(CreateProfileViewController(), animated: true)
+        
+//        self.present(CreateProfileViewController(), animated: true, completion: nil)
         
         // Do any additional setup after loading the view.
     }

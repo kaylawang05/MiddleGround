@@ -17,6 +17,7 @@
 		AD45B10725D899EF00D83645 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B10625D899EF00D83645 /* Appearance.swift */; };
 		BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */; };
 		BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AEA25D89CA20077BEDF /* UIColor+Init.swift */; };
+		BF947AF625D89D0B0077BEDF /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AD45B10625D899EF00D83645 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		BF947AEA25D89CA20077BEDF /* UIColor+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Init.swift"; sourceTree = "<group>"; };
+		BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				AD45B0C325D8718300D83645 /* ViewController.swift */,
+				BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,
 				AD45B10725D899EF00D83645 /* Appearance.swift in Sources */,
+				BF947AF625D89D0B0077BEDF /* CreateProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
