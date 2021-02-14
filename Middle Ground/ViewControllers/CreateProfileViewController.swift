@@ -25,6 +25,22 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     private let socialView = UIView()
 //    private let linkView = UIView()
     
+    private let titleLabel: UILabel = {
+        let tl = UILabel()
+        tl.text = "Create Profile"
+        tl.font = MGAppearance.Fonts.title
+        tl.textColor = MGAppearance.Colors.color
+        tl.textAlignment = .center
+        return tl
+    }()
+    private let subtitleLabel: UILabel = {
+        let sl = UILabel()
+        sl.text = "Enter your information below"
+        sl.font = MGAppearance.Fonts.subtitle
+        sl.textColor = MGAppearance.Colors.color
+        sl.textAlignment = .center
+        return sl
+    }()
     private let nameTextField = MGTextField(placeholder: "Name")
     private let ageTextField = MGTextField(placeholder: "Age")
     private let pronounTextField = MGTextField(placeholder: "Pronouns (optional)")
@@ -51,14 +67,14 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     private let leftLabel: UILabel = {
         let left = UILabel()
         left.text = "Left"
-        left.font = MGAppearance.Fonts.textField
+        left.font = MGAppearance.Fonts.regular
         left.textColor = MGAppearance.Colors.color
         return left
     }()
     private let rightLabel: UILabel = {
         let right = UILabel()
         right.text = "Right"
-        right.font = MGAppearance.Fonts.textField
+        right.font = MGAppearance.Fonts.regular
         right.textColor = MGAppearance.Colors.color
         return right
     }()
@@ -73,16 +89,26 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     private let libertarianLabel: UILabel = {
         let left = UILabel()
         left.text = "Libertarian"
-        left.font = MGAppearance.Fonts.textField
+        left.font = MGAppearance.Fonts.regular
         left.textColor = MGAppearance.Colors.color
         return left
     }()
     private let authoritarianLabel: UILabel = {
         let right = UILabel()
         right.text = "Authoritarian"
-        right.font = MGAppearance.Fonts.textField
+        right.font = MGAppearance.Fonts.regular
         right.textColor = MGAppearance.Colors.color
         return right
+    }()
+    private let makeProfileButton: UIButton = {
+        let mpb = UIButton()
+        mpb.addTarget(self, action: #selector(makeProfile), for: .touchUpInside)
+        mpb.setTitle("Create Profile", for: .normal)
+        mpb.layer.cornerRadius = CGFloat(MGAppearance.textFieldHeight * 1/2)
+        mpb.setTitleColor(MGAppearance.Colors.color, for: .normal)
+        mpb.layer.borderWidth = 1
+        mpb.layer.borderColor = MGAppearance.Colors.color.cgColor
+        return mpb
     }()
     
 //    private let politicalSentence1: UILabel = {
@@ -116,6 +142,15 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         topView.constrain(to: self.view, topInset: 0, leadingInset: 0, trailingInset: 0)
         topView.constrain(height: 217)
         
+        topView.addSubview(titleLabel)
+        titleLabel.constrain(height: 40)
+        titleLabel.constrain(to: topView, leadingInset: 0, trailingInset: 0, centerXInset: 0, centerYInset: 0)
+        
+        topView.addSubview(subtitleLabel)
+        subtitleLabel.constrain(height: 30)
+        subtitleLabel.constrain(to: topView, leadingInset: 0, trailingInset: 0, centerXInset: 0)
+        subtitleLabel.constrain(against: titleLabel, topInset: 10)
+        
         line.backgroundColor = MGAppearance.Colors.color
         line.constrain(to: self.view, leadingInset: 0, trailingInset: 0)
         line.constrain(against: topView, topInset: 0)
@@ -146,7 +181,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         regionButton.layer.cornerRadius = CGFloat(MGAppearance.textFieldHeight * 1/2)
         regionButton.setTitle("Select Region", for: .normal)
         regionButton.setTitleColor(MGAppearance.Colors.color, for: .normal)
-        regionButton.titleLabel?.font =  MGAppearance.Fonts.textField
+        regionButton.titleLabel?.font =  MGAppearance.Fonts.regular
         regionButton.constrain(to: self.view, centerXInset: 0)
         regionButton.constrain(against: pronounTextField, topInset: CGFloat(MGAppearance.distanceBetweenTextField))
         regionButton.constrain(width: 300, height: 36)
@@ -154,11 +189,12 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         bottomView.addSubview(politicalAffiliation)
         politicalAffiliation.constrain(to: self.view, centerXInset: 0)
         politicalAffiliation.constrain(against: regionButton, topInset: CGFloat(MGAppearance.distanceBetweenTextField))
+        politicalAffiliation.constrain(height: 45)
     
         bottomView.addSubview(economicView)
-        economicView.constrain(against: politicalAffiliation, topInset: 3)
+        economicView.constrain(against: politicalAffiliation, topInset: 0)
         economicView.constrain(to: self.view, centerXInset: 0)
-        economicView.constrain(width: 300, height: 30)
+        economicView.constrain(width: 300, height: 40)
         
         economicView.addSubview(economicSlider)
         economicSlider.constrain(to: economicView, bottomInset: 0, centerXInset: 0)
@@ -167,30 +203,34 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         
         economicView.addSubview(leftLabel)
         leftLabel.constrain(to: economicView, topInset: 0, leadingInset: 0)
-        leftLabel.constrain(against: economicSlider, bottomInset: 3 )
+        leftLabel.constrain(against: economicSlider, bottomInset: 10)
         
         economicView.addSubview(rightLabel)
         rightLabel.constrain(to: economicView, topInset: 0, trailingInset: 0)
-        rightLabel.constrain(against: economicSlider, bottomInset: 3)
+        rightLabel.constrain(against: economicSlider, bottomInset: 10)
         
         bottomView.addSubview(socialView)
-        socialView.constrain(against: economicView, topInset: 3)
+        socialView.constrain(against: economicView, topInset: 30)
         socialView.constrain(to: self.view, centerXInset: 0)
         socialView.constrain(width: 300, height: 30)
         
-        economicView.addSubview(economicSlider)
-        economicSlider.constrain(to: economicView, bottomInset: 0, centerXInset: 0)
-        economicSlider.constrain(width: 300, height: 5)
-        economicSlider.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
+        socialView.addSubview(socialSlider)
+        socialSlider.constrain(to: socialView, bottomInset: 0, centerXInset: 0)
+        socialSlider.constrain(width: 300, height: 5)
+        socialSlider.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
         
-        economicView.addSubview(leftLabel)
-        leftLabel.constrain(to: economicView, topInset: 0, leadingInset: 0)
-        leftLabel.constrain(against: economicSlider, bottomInset: 3 )
+        socialView.addSubview(libertarianLabel)
+        libertarianLabel.constrain(to: socialView, topInset: 0, leadingInset: 0)
+        libertarianLabel.constrain(against: socialSlider, bottomInset: 10)
         
-        economicView.addSubview(rightLabel)
-        rightLabel.constrain(to: economicView, topInset: 0, trailingInset: 0)
-        rightLabel.constrain(against: economicSlider, bottomInset: 3)
+        socialView.addSubview(authoritarianLabel)
+        authoritarianLabel.constrain(to: socialView, topInset: 0, trailingInset: 0)
+        authoritarianLabel.constrain(against: socialSlider, bottomInset: 10)
         
+        bottomView.addSubview(makeProfileButton)
+        makeProfileButton.constrain(width: CGFloat(MGAppearance.textFieldLength), height: CGFloat(MGAppearance.textFieldHeight))
+        makeProfileButton.constrain(to: self.view, centerXInset: 0)
+        makeProfileButton.constrain(against: socialView, topInset: 40)
 //        bottomView.addSubview(linkView)
 //        linkView.constrain(to: bottomView, centerXInset: 0)
 //        linkView.constrain(against: politicalAffiliation, topInset: 3)
@@ -230,6 +270,9 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         // Use this code below only if you want UISlider to snap to values step by step
         let roundedStepValue = round(sender.value)
         sender.value = roundedStepValue
+    }
+    @objc func makeProfile() {
+        
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

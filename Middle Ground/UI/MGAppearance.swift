@@ -16,11 +16,10 @@ class MGAppearance {
     
     enum Fonts {
         static let testFont = UIFont(name: "Rockwell", size: 20)
-        static let testFont1 = UIFont(name: "Rockwell Bold", size: 1)
-        static let testFont2 = UIFont(name: "Rockwell Bold Italic", size: 1)
-        static let testFont3 = UIFont(name: "Rockwell Italic", size: 1)
-        static let textField = UIFont(name: "Rockwell", size: 15)
+        static let title = UIFont(name: "Rockwell Bold", size: 30)
+        static let regular = UIFont(name: "Rockwell", size: 15)
         static let heading = UIFont(name: "Rockwell", size: 20)
+        static let subtitle = UIFont(name: "Rockwell Italic", size: 20)
     }
     
     static let textFieldHeight = 36
