@@ -20,6 +20,7 @@ class MGAppearance {
         static let regular = UIFont(name: "Rockwell", size: 15)
         static let heading = UIFont(name: "Rockwell", size: 20)
         static let subtitle = UIFont(name: "Rockwell Italic", size: 20)
+        static let mainTitle = UIFont(name: "Rockwell", size: 34)
     }
     
     static let textFieldHeight = 36

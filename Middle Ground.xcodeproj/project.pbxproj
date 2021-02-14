@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1F499F25D93DFD008155A9 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F499E25D93DFD008155A9 /* ReportViewController.swift */; };
+		AD1F49A425D97AEB008155A9 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F49A325D97AEB008155A9 /* RateViewController.swift */; };
 		AD45B0C025D8718300D83645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0BF25D8718300D83645 /* AppDelegate.swift */; };
 		AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0C125D8718300D83645 /* SceneDelegate.swift */; };
 		AD45B0C425D8718300D83645 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0C325D8718300D83645 /* LandingPageViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1F499E25D93DFD008155A9 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		AD1F49A325D97AEB008155A9 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		AD45B0BC25D8718300D83645 /* Middle Ground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Middle Ground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD45B0BF25D8718300D83645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD45B0C125D8718300D83645 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 			children = (
 				AD45B0C325D8718300D83645 /* LandingPageViewController.swift */,
 				BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */,
+				AD1F499E25D93DFD008155A9 /* ReportViewController.swift */,
+				AD1F49A325D97AEB008155A9 /* RateViewController.swift */,
 				AD45B11425D8D62100D83645 /* RegionPickerViewController.swift */,
 			);
 			path = ViewControllers;
@@ -306,9 +312,11 @@
 			files = (
 				BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */,
 				BF41D1E825D8A4E90036B301 /* MGTextField.swift in Sources */,
-				AD45B0C425D8718300D83645 /* ViewController.swift in Sources */,
-				AD45B11525D8D62100D83645 /* RegionPickerViewController.swift in Sources */,
 				AD45B0C425D8718300D83645 /* LandingPageViewController.swift in Sources */,
+				AD45B11525D8D62100D83645 /* RegionPickerViewController.swift in Sources */,
+				AD1F499F25D93DFD008155A9 /* ReportViewController.swift in Sources */,
+				AD45B0C425D8718300D83645 /* LandingPageViewController.swift in Sources */,
+				AD1F49A425D97AEB008155A9 /* RateViewController.swift in Sources */,
 				AD45B0C025D8718300D83645 /* AppDelegate.swift in Sources */,
 				BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,

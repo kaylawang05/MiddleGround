@@ -10,38 +10,27 @@ import AVFoundation
 import AVKit
 
 class LandingPageViewController: UIViewController {
-    private let playButton = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 200));
-    
-//    private let title = UILabel()
-//    private let 
-    
-//    @objc func playVideo(_ sender: UIButton) {
-//        guard let url = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8") else {
-//            return
-//        }
-//        // Create an AVPlayer, passing it the HTTP Live Streaming URL.
-//        let player = AVPlayer(url: url)
-//
-//        // Create a new AVPlayerViewController and pass it a reference to the player.
-//        let controller = AVPlayerViewController()
-//        controller.player = player
-//
-//        // Modally present the player and call the player's play() method when complete.
-//        present(controller, animated: true) {
-//            player.play()
-//        }
-//    }
- 
+    private let titleLabel: UILabel = {
+        let tl = UILabel()
+        tl.text = "Welcome to the Middle Ground!"
+        tl.font = MGAppearance.Fonts.mainTitle
+        tl.textColor = MGAppearance.Colors.color
+        tl.textAlignment = .center
+        tl.numberOfLines = 2
+        tl.translatesAutoresizingMaskIntoConstraints = false
+        tl.lineBreakMode = .byWordWrapping
+        return tl
+    }()
  
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .white
         
-        self.navigationController!.pushViewController(CreateProfileViewController(), animated: true)
-        
-//        self.present(CreateProfileViewController(), animated: true, completion: nil)
-        
-        // Do any additional setup after loading the view.
+        self.view.addSubview(titleLabel)
+        titleLabel.constrain(to: self.view, topInset: 102, centerXInset: 0)
+        titleLabel.constrain(width: 274, height: 132)
+
     }
 
     
