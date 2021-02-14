@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     private let regions = ["Northeast", "Midwest", "West", "Southeast", "Southwest", "International"]
     private var name = ""
@@ -59,7 +59,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     private let economicSlider: UISlider = {
         let es = UISlider()
         es.minimumValue = 0
-        es.maximumValue = 10
+        es.maximumValue = 1
         es.isContinuous = false
         es.tintColor = MGAppearance.Colors.color
         return es
@@ -81,7 +81,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     private let socialSlider: UISlider = {
         let es = UISlider()
         es.minimumValue = 0
-        es.maximumValue = 10
+        es.maximumValue = 1
         es.isContinuous = false
         es.tintColor = MGAppearance.Colors.color
         return es
@@ -132,6 +132,10 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        
+        nameTextField.delegate = self
+        ageTextField.delegate = self
+        pronounTextField.delegate = self
         
         self.view.addSubview(topView)
         self.view.addSubview(line)
@@ -199,7 +203,6 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         economicView.addSubview(economicSlider)
         economicSlider.constrain(to: economicView, bottomInset: 0, centerXInset: 0)
         economicSlider.constrain(width: 300, height: 5)
-        economicSlider.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
         
         economicView.addSubview(leftLabel)
         leftLabel.constrain(to: economicView, topInset: 0, leadingInset: 0)
@@ -217,7 +220,6 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         socialView.addSubview(socialSlider)
         socialSlider.constrain(to: socialView, bottomInset: 0, centerXInset: 0)
         socialSlider.constrain(width: 300, height: 5)
-        socialSlider.addTarget(self, action: #selector(self.sliderValueDidChange(_:)), for: .valueChanged)
         
         socialView.addSubview(libertarianLabel)
         libertarianLabel.constrain(to: socialView, topInset: 0, leadingInset: 0)
@@ -265,14 +267,13 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
             UIApplication.shared.open(url)
         }
     }
-    @objc func sliderValueDidChange(_ sender:UISlider!)
-    {
-        // Use this code below only if you want UISlider to snap to values step by step
-        let roundedStepValue = round(sender.value)
-        sender.value = roundedStepValue
-    }
     @objc func makeProfile() {
-        
+        print(nameTextField.text!)
+        print(ageTextField.text!)
+        print(pronounTextField.text!)
+        print(selectedRegion)
+        print(economicSlider.value)
+        print(socialSlider.value)
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -284,7 +285,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         regionButton.setTitle(regions[row], for: .normal)
         selectedRegion = regions[row]
         return regions[row]
-    
+    }
 }
 /*
 extension UIViewController {
@@ -297,5 +298,5 @@ extension UIViewController {
         view.endEditing(true)
     }
 */
-}
+
 
