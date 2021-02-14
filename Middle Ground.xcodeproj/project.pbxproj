@@ -14,7 +14,8 @@
 		AD45B0CC25D8718A00D83645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD45B0CA25D8718A00D83645 /* LaunchScreen.storyboard */; };
 		AD45B0D725D8718A00D83645 /* Middle_GroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0D625D8718A00D83645 /* Middle_GroundTests.swift */; };
 		AD45B0E225D8718B00D83645 /* Middle_GroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B0E125D8718B00D83645 /* Middle_GroundUITests.swift */; };
-		AD45B10725D899EF00D83645 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B10625D899EF00D83645 /* Appearance.swift */; };
+		AD45B10725D899EF00D83645 /* MGAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B10625D899EF00D83645 /* MGAppearance.swift */; };
+		BF41D1E825D8A4E90036B301 /* MGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41D1E725D8A4E90036B301 /* MGTextField.swift */; };
 		BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */; };
 		BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AEA25D89CA20077BEDF /* UIColor+Init.swift */; };
 		BF947AF625D89D0B0077BEDF /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */; };
@@ -51,7 +52,8 @@
 		AD45B0DD25D8718B00D83645 /* Middle GroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Middle GroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD45B0E125D8718B00D83645 /* Middle_GroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middle_GroundUITests.swift; sourceTree = "<group>"; };
 		AD45B0E325D8718B00D83645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD45B10625D899EF00D83645 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		AD45B10625D899EF00D83645 /* MGAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGAppearance.swift; sourceTree = "<group>"; };
+		BF41D1E725D8A4E90036B301 /* MGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTextField.swift; sourceTree = "<group>"; };
 		BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		BF947AEA25D89CA20077BEDF /* UIColor+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Init.swift"; sourceTree = "<group>"; };
 		BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
@@ -164,7 +166,8 @@
 		BF947AE625D89BD20077BEDF /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				AD45B10625D899EF00D83645 /* Appearance.swift */,
+				AD45B10625D899EF00D83645 /* MGAppearance.swift */,
+				BF41D1E725D8A4E90036B301 /* MGTextField.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -299,11 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */,
+				BF41D1E825D8A4E90036B301 /* MGTextField.swift in Sources */,
 				AD45B0C425D8718300D83645 /* ViewController.swift in Sources */,
 				AD45B0C025D8718300D83645 /* AppDelegate.swift in Sources */,
 				BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,
-				AD45B10725D899EF00D83645 /* Appearance.swift in Sources */,
+				AD45B10725D899EF00D83645 /* MGAppearance.swift in Sources */,
 				BF947AF625D89D0B0077BEDF /* CreateProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
