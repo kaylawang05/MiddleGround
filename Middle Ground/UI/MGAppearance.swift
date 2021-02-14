@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Appearance {
+class MGAppearance {
     
     enum Colors {
         static let textColor = UIColor(hex: "#707070")
