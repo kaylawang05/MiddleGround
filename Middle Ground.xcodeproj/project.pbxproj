@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5E22622F95CBA106F319F00 /* Pods_Middle_Ground_Middle_GroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ECED69D548D49B725CB7DE /* Pods_Middle_Ground_Middle_GroundUITests.framework */; };
 		AD1F499F25D93DFD008155A9 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F499E25D93DFD008155A9 /* ReportViewController.swift */; };
 		AD1F49A425D97AEB008155A9 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F49A325D97AEB008155A9 /* RateViewController.swift */; };
 		AD1F49A925D97ECB008155A9 /* BeforeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F49A825D97ECB008155A9 /* BeforeVideoViewController.swift */; };
@@ -21,9 +22,12 @@
 		AD45B10725D899EF00D83645 /* MGAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B10625D899EF00D83645 /* MGAppearance.swift */; };
 		AD45B11525D8D62100D83645 /* RegionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45B11425D8D62100D83645 /* RegionPickerViewController.swift */; };
 		BF41D1E825D8A4E90036B301 /* MGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41D1E725D8A4E90036B301 /* MGTextField.swift */; };
+		BF41D2B625D987290036B301 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF41D2B525D987290036B301 /* SocketManager.swift */; };
 		BF947AD725D89B8E0077BEDF /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */; };
 		BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AEA25D89CA20077BEDF /* UIColor+Init.swift */; };
 		BF947AF625D89D0B0077BEDF /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */; };
+		BFFDDC23506CCF69A9518D93 /* Pods_Middle_Ground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEE06DB2FFDBA9F2CA148F8 /* Pods_Middle_Ground.framework */; };
+		D09FD6A1071CA1EE5952178A /* Pods_Middle_GroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB80BF39750BEDB47A627CE /* Pods_Middle_GroundTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30654D468F781B1452450940 /* Pods-Middle Ground-Middle GroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Middle Ground-Middle GroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-Middle Ground-Middle GroundUITests/Pods-Middle Ground-Middle GroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37ECED69D548D49B725CB7DE /* Pods_Middle_Ground_Middle_GroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Middle_Ground_Middle_GroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8A64592CF975F41DFAD2EF /* Pods-Middle Ground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Middle Ground.release.xcconfig"; path = "Target Support Files/Pods-Middle Ground/Pods-Middle Ground.release.xcconfig"; sourceTree = "<group>"; };
+		5EB80BF39750BEDB47A627CE /* Pods_Middle_GroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Middle_GroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B253E415E5E7836161CEB8B /* Pods-Middle GroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Middle GroundTests.release.xcconfig"; path = "Target Support Files/Pods-Middle GroundTests/Pods-Middle GroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		9149EF3E3BE718234701B20D /* Pods-Middle GroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Middle GroundTests.debug.xcconfig"; path = "Target Support Files/Pods-Middle GroundTests/Pods-Middle GroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD1F499E25D93DFD008155A9 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		AD1F49A325D97AEB008155A9 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		AD1F49A825D97ECB008155A9 /* BeforeVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeVideoViewController.swift; sourceTree = "<group>"; };
@@ -63,10 +73,14 @@
 		AD45B0E325D8718B00D83645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD45B10625D899EF00D83645 /* MGAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGAppearance.swift; sourceTree = "<group>"; };
 		AD45B11425D8D62100D83645 /* RegionPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionPickerViewController.swift; sourceTree = "<group>"; };
+		AF05C788BA70FDD67F418A8D /* Pods-Middle Ground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Middle Ground.debug.xcconfig"; path = "Target Support Files/Pods-Middle Ground/Pods-Middle Ground.debug.xcconfig"; sourceTree = "<group>"; };
 		BF41D1E725D8A4E90036B301 /* MGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTextField.swift; sourceTree = "<group>"; };
+		BF41D2B525D987290036B301 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		BF947AD625D89B8E0077BEDF /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		BF947AEA25D89CA20077BEDF /* UIColor+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Init.swift"; sourceTree = "<group>"; };
 		BF947AF525D89D0B0077BEDF /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		DAEE06DB2FFDBA9F2CA148F8 /* Pods_Middle_Ground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Middle_Ground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42D7774E4C545854B632F57 /* Pods-Middle Ground-Middle GroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Middle Ground-Middle GroundUITests.release.xcconfig"; path = "Target Support Files/Pods-Middle Ground-Middle GroundUITests/Pods-Middle Ground-Middle GroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFDDC23506CCF69A9518D93 /* Pods_Middle_Ground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09FD6A1071CA1EE5952178A /* Pods_Middle_GroundTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +104,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E22622F95CBA106F319F00 /* Pods_Middle_Ground_Middle_GroundUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1DCDB273C7814FB92B0DBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF05C788BA70FDD67F418A8D /* Pods-Middle Ground.debug.xcconfig */,
+				3C8A64592CF975F41DFAD2EF /* Pods-Middle Ground.release.xcconfig */,
+				30654D468F781B1452450940 /* Pods-Middle Ground-Middle GroundUITests.debug.xcconfig */,
+				E42D7774E4C545854B632F57 /* Pods-Middle Ground-Middle GroundUITests.release.xcconfig */,
+				9149EF3E3BE718234701B20D /* Pods-Middle GroundTests.debug.xcconfig */,
+				8B253E415E5E7836161CEB8B /* Pods-Middle GroundTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AD45B0B325D8718300D83645 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +132,8 @@
 				AD45B0D525D8718A00D83645 /* Middle GroundTests */,
 				AD45B0E025D8718B00D83645 /* Middle GroundUITests */,
 				AD45B0BD25D8718300D83645 /* Products */,
+				1F1DCDB273C7814FB92B0DBB /* Pods */,
+				C5E6B95305FDF5AEF221E4B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +154,7 @@
 				BF947AE625D89BD20077BEDF /* UI */,
 				BF947AD525D89B6F0077BEDF /* Extensions */,
 				BF947ADE25D89BA40077BEDF /* Other */,
+				BF41D2B525D987290036B301 /* SocketManager.swift */,
 				AD45B0CD25D8718A00D83645 /* Info.plist */,
 				AD45B0C825D8718A00D83645 /* Assets.xcassets */,
 			);
@@ -187,6 +221,16 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		C5E6B95305FDF5AEF221E4B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAEE06DB2FFDBA9F2CA148F8 /* Pods_Middle_Ground.framework */,
+				37ECED69D548D49B725CB7DE /* Pods_Middle_Ground_Middle_GroundUITests.framework */,
+				5EB80BF39750BEDB47A627CE /* Pods_Middle_GroundTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD45B0E625D8718B00D83645 /* Build configuration list for PBXNativeTarget "Middle Ground" */;
 			buildPhases = (
+				ED242173247BEEF0B99A1D4D /* [CP] Check Pods Manifest.lock */,
 				AD45B0B825D8718300D83645 /* Sources */,
 				AD45B0B925D8718300D83645 /* Frameworks */,
 				AD45B0BA25D8718300D83645 /* Resources */,
+				4C08C1045C8E275847D86583 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD45B0E925D8718B00D83645 /* Build configuration list for PBXNativeTarget "Middle GroundTests" */;
 			buildPhases = (
+				43D7BD1F867C8DB7A1241000 /* [CP] Check Pods Manifest.lock */,
 				AD45B0CE25D8718A00D83645 /* Sources */,
 				AD45B0CF25D8718A00D83645 /* Frameworks */,
 				AD45B0D025D8718A00D83645 /* Resources */,
@@ -229,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD45B0EC25D8718B00D83645 /* Build configuration list for PBXNativeTarget "Middle GroundUITests" */;
 			buildPhases = (
+				EAC524E0B031F1D4FDE368BD /* [CP] Check Pods Manifest.lock */,
 				AD45B0D925D8718B00D83645 /* Sources */,
 				AD45B0DA25D8718B00D83645 /* Frameworks */,
 				AD45B0DB25D8718B00D83645 /* Resources */,
+				5EF5E94890CBC3E96C008069 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +360,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43D7BD1F867C8DB7A1241000 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Middle GroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C08C1045C8E275847D86583 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Middle Ground/Pods-Middle Ground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Middle Ground/Pods-Middle Ground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Middle Ground/Pods-Middle Ground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EF5E94890CBC3E96C008069 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Middle Ground-Middle GroundUITests/Pods-Middle Ground-Middle GroundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Middle Ground-Middle GroundUITests/Pods-Middle Ground-Middle GroundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Middle Ground-Middle GroundUITests/Pods-Middle Ground-Middle GroundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC524E0B031F1D4FDE368BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Middle Ground-Middle GroundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED242173247BEEF0B99A1D4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Middle Ground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD45B0B825D8718300D83645 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,6 +481,7 @@
 				BF947AEB25D89CA20077BEDF /* UIColor+Init.swift in Sources */,
 				AD45B0C225D8718300D83645 /* SceneDelegate.swift in Sources */,
 				AD45B10725D899EF00D83645 /* MGAppearance.swift in Sources */,
+				BF41D2B625D987290036B301 /* SocketManager.swift in Sources */,
 				BF947AF625D89D0B0077BEDF /* CreateProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +647,7 @@
 		};
 		AD45B0E725D8718B00D83645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF05C788BA70FDD67F418A8D /* Pods-Middle Ground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,6 +667,7 @@
 		};
 		AD45B0E825D8718B00D83645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8A64592CF975F41DFAD2EF /* Pods-Middle Ground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,6 +687,7 @@
 		};
 		AD45B0EA25D8718B00D83645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9149EF3E3BE718234701B20D /* Pods-Middle GroundTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +710,7 @@
 		};
 		AD45B0EB25D8718B00D83645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B253E415E5E7836161CEB8B /* Pods-Middle GroundTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +733,7 @@
 		};
 		AD45B0ED25D8718B00D83645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30654D468F781B1452450940 /* Pods-Middle Ground-Middle GroundUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -597,6 +755,7 @@
 		};
 		AD45B0EE25D8718B00D83645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42D7774E4C545854B632F57 /* Pods-Middle Ground-Middle GroundUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
