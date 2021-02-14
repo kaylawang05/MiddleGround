@@ -10,6 +10,7 @@ import UIKit
 
 class BeforeVideoViewController: UIViewController {
     
+    //private let video = VideoViewController()
     private let videoImageView = UIImageView()
     private let matchButton: UIButton = {
         let mb = UIButton()
@@ -18,6 +19,7 @@ class BeforeVideoViewController: UIViewController {
         mb.backgroundColor = MGAppearance.Colors.color
         mb.titleLabel?.font =  MGAppearance.Fonts.heading
         mb.layer.cornerRadius = 33
+        //mb.addTarget(self, action: #selector(match), for: .touchUpInside)
         return mb
     }()
     
@@ -31,4 +33,9 @@ class BeforeVideoViewController: UIViewController {
         matchButton.constrain(width: 219, height: 66)
         matchButton.constrain(to: videoImageView, topInset: 677, centerXInset: 0)
     }
+    /*
+    @objc func match() {
+        self.navigationController?.pushViewController(video, animated: true)
+    }
+    */
 }

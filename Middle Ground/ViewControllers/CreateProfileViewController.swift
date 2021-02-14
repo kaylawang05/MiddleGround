@@ -64,6 +64,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         es.maximumValue = 1
         es.isContinuous = false
         es.tintColor = MGAppearance.Colors.color
+        es.value = 3
         return es
     }()
     private let leftLabel: UILabel = {
@@ -86,6 +87,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         es.maximumValue = 1
         es.isContinuous = false
         es.tintColor = MGAppearance.Colors.color
+        es.value = 3
         return es
     }()
     private let libertarianLabel: UILabel = {
@@ -204,7 +206,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         
         economicView.addSubview(economicSlider)
         economicSlider.constrain(to: economicView, bottomInset: 0, centerXInset: 0)
-        economicSlider.constrain(width: 300, height: 5)
+        economicSlider.constrain(width: 300, height: 15)
         
         economicView.addSubview(leftLabel)
         leftLabel.constrain(to: economicView, topInset: 0, leadingInset: 0)
@@ -221,7 +223,7 @@ class CreateProfileViewController: UIViewController, UIPickerViewDelegate, UIPic
         
         socialView.addSubview(socialSlider)
         socialSlider.constrain(to: socialView, bottomInset: 0, centerXInset: 0)
-        socialSlider.constrain(width: 300, height: 5)
+        socialSlider.constrain(width: 300, height: 15)
         
         socialView.addSubview(libertarianLabel)
         libertarianLabel.constrain(to: socialView, topInset: 0, leadingInset: 0)
