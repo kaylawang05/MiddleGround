@@ -1,0 +1,6 @@
+framework module Pods_Middle_Ground_Middle_GroundUITests {
+  umbrella header "Pods-Middle Ground-Middle GroundUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
